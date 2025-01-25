@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app-container">
     <RouterView />
   </div>
 </template>
@@ -8,4 +8,9 @@
 import { RouterView } from 'vue-router'
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>

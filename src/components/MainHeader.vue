@@ -1,0 +1,84 @@
+<template>
+  <header class="header">
+    <ul class="header__list">
+      <li class="header__item">
+        <img src="@/assets/images/logo.webp" alt="lumifilm logo" />
+      </li>
+      <li class="header__item">
+        <RouterLink to="/">Home</RouterLink>
+      </li>
+      <li class="header__item">
+        <RouterLink to="/cartelera">Cartelera</RouterLink>
+      </li>
+      <li class="header__item">
+        <a role="button" class="header__item__button" id="search-link">Buscar</a>
+      </li>
+    </ul>
+  </header>
+</template>
+
+<script setup lang="ts"></script>
+
+<style lang="scss" scoped>
+@use '../assets/styles/variables' as *;
+@use '../assets/styles/mixins' as *;
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+.header {
+  width: 100%;
+  color: $white-color;
+  padding: 5px;
+  position: fixed;
+  background-color: #38354bd3;
+  z-index: 10000;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+  }
+
+  &__item {
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      @include bold-text(16px);
+      font-family: 'Poppins', serif;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      color: $red-color;
+      transition: ease-in-out 0.2s;
+    }
+    img {
+      width: 100px;
+    }
+
+    &__button {
+      color: $white-color;
+      background: none;
+      border: none;
+      cursor: pointer;
+      @include bold-text(16px);
+      font-family: 'Poppins', serif;
+      text-transform: uppercase;
+    }
+
+    &__button:hover {
+      color: $red-color;
+      transition: ease-in-out 0.2s;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .header {
+    display: none;
+  }
+}
+</style>

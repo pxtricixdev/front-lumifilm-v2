@@ -24,3 +24,7 @@
   </main>
   <footer>Esto será el footer</footer>
 </template>
+
+<script setup lang="ts">
+import MainHeader from '@/components/MainHeader.vue'
+</script>
