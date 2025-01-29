@@ -5,7 +5,7 @@
         position: absolute;
         top: 0;
         z-index: -1;
-        height: 100%;
+        height: 150%;
         width: 100%;
         background: radial-gradient(
             ellipse 80% 80% at 50% -20%,
@@ -22,9 +22,12 @@
   <main>
     <RouterView />
   </main>
-  <footer>Esto será el footer</footer>
+  <footer>
+    <MainFooter />
+  </footer>
 </template>
 
 <script setup lang="ts">
 import MainHeader from '@/components/MainHeader.vue'
+import MainFooter from '@/components/MainFooter.vue';
 </script>
