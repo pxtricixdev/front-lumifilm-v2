@@ -1,33 +1,33 @@
-
 <template>
     <footer class="footer">
-      <ul class="footer__list">
-        <li class="footer__item">
-          <img src="@/assets/images/logo.webp" alt="lumifilm logo" />
-        </li>
-        <li class="footer__item">
-          <RouterLink to="/">Cartelera</RouterLink>
-        </li>
-        <li class="footer__item">
-          <RouterLink to="/Términos">Términos y Condiciones</RouterLink>
-        </li>
-        <li class="footer__item">
-            <RouterLink to="/Políticas">Política de Privacidad</RouterLink>
-        </li>
-      </ul>
+        <ul class="footer__list">
+            <li class="footer__item footer__item--logo">
+                <img src="@/assets/images/logo.webp" alt="lumifilm logo" />
+            </li>
+            <li class="footer__item">
+                <RouterLink to="/Cartelera">Cartelera</RouterLink>
+            </li>
+            <li class="footer__item">
+                <RouterLink to="/Términos">Términos y Condiciones</RouterLink>
+            </li>
+            <li class="footer__item">
+                <RouterLink to="/Políticas">Política de Privacidad</RouterLink>
+            </li>
+        </ul>
     </footer>
 </template>
 
 
 <script setup lang="ts"></script>
 
+
 <style lang="scss" scoped>
 @use '../assets/styles/variables' as *;
 @use '../assets/styles/mixins' as *;
-@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 .footer {
-    
+
     width: 100%;
     text-align: center;
 
@@ -45,12 +45,12 @@
             display: flex;
             justify-content: center;
 
-                img {
-                    max-width: 80%;
-                    margin: 0 auto;
-                }
+            img {
+                max-width: 80%;
+                margin: 0 auto;
             }
         }
+    }
 
     &__social-list {
         display: flex;
@@ -60,7 +60,7 @@
         margin: 0 auto;
         margin-bottom: 130px;
         padding-top: 20px;
-        
+
     }
 
     &__social-item {
@@ -97,6 +97,4 @@
         max-width: 1200px;
     }
 }
-
 </style>
-
