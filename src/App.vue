@@ -9,8 +9,5 @@ import { RouterView } from 'vue-router'
 </script>
 
 <style lang="scss">
-body {
-  margin: 0;
-  padding: 0;
-}
+@import '@/assets/styles/main.scss';
 </style>
