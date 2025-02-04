@@ -1,0 +1,16 @@
+<svg width="140" height="160" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+    <!-- Respaldo superior -->
+    <path d="M60 50 Q150 0 240 50 V143 H60 Z" fill="#00F401" stroke="black" />
+   
+    <!-- Asiento -->
+    <rect x="50" y="150" width="200" height="80" rx="20" ry="20" fill="#00F401" stroke="black"  />
+
+    <!-- Patas -->
+    <rect x="70" y="230" width="40" height="50" rx="5" ry="5" fill="#00F401" stroke="black"  />
+    <rect x="190" y="230" width="40" height="50" rx="5" ry="5" fill="#00F401" stroke="black"  />
+
+    <!-- Brazos de la butaca -->
+    <rect x="30" y="120" width="40" height="90" rx="20" ry="20" fill="#00F401" stroke="black" />
+    <rect x="230" y="120" width="40" height="90" rx="20" ry="20" fill="#00F401" stroke="black" />
+</svg>
+
