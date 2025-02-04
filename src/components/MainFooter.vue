@@ -1,5 +1,6 @@
 <template>
     <footer class="footer">
+        <hr class="footer__hr">
         <ul class="footer__list">
             <li class="footer__item footer__item--logo">
                 <img src="@/assets/images/logo.webp" alt="lumifilm logo" />
@@ -26,8 +27,8 @@
 @use '../assets/styles/mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-.footer {
 
+.footer {
     width: 100%;
     text-align: center;
 
@@ -73,6 +74,12 @@
             height: 30px;
         }
     }
+
+    &__hr {
+        border-color: $red-color;
+        opacity: 50%;
+        width: 90%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -93,7 +100,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .hrFooter {
+    .footer__hr {
         max-width: 1200px;
     }
 }
